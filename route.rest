@@ -1,0 +1,28 @@
+GET http://localhost:4000/subscribers
+
+###
+
+GET http://localhost:4000/subscribers/60145fdab8fa5309108bffb2
+
+###
+
+
+POST http://localhost:4000/subscribers
+Content-Type: application/json
+
+{
+    "name":"MD Hossen",
+    "Rool_NO":"1"
+}
+
+###
+DELETE http://localhost:4000/subscribers/6014bbd3c0489d2eb03ef560
+
+###
+PATCH  http://localhost:4000/subscribers/60145fdab8fa5309108bffb2
+Content-Type: application/json
+
+{
+    "name":"Mr Rana",
+    "Rool_NO":"3"
+}
