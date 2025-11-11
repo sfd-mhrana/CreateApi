@@ -1,6 +1,6 @@
 const  express=require('express')
 const app=express();
-const mongoose=require('mongoose')
+const mongoose=require('mongoose');
 
 
 mongoose.connect('mongodb://localhost/school',{ useNewUrlParser: true ,useUnifiedTopology: true})
@@ -18,4 +18,5 @@ app.use('/subscribers',subscribersroute)
 
 app.listen(4000,(req,res)=>{
     console.log('Server Started')
+
 })
